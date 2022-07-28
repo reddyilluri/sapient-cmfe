@@ -112,7 +112,7 @@ import { faBell,faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export class TopHeaderComponent implements OnInit {
 
-  img:any='https://www.nicepng.com/png/full/136-1366211_group-of-10-guys-login-user-icon-png.png';
+  img:any='https://us.123rf.com/450wm/ryanking999/ryanking9991603/ryanking999160300173/53522924-smiling-medical-doctor-woman-with-stethoscope-show-something-isolated-over-white-background-asian.jpg?ver=6';
 
   dropdwon='dropdwon'
 

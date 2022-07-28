@@ -1,5 +1,6 @@
 body{
   width:100%;
+  font-family: sans-serif;
 }
 * {
     margin: 0;
@@ -13,27 +14,48 @@ body{
   }
   
   .slidemenu {
-  position: relative;
-    /* float: left; */
-    max-width: 0;
+    //background:1000px;
+    position: relative;
+    // float: left;
+    padding-right:3px;
+    max-width: 5;
     margin-left: -1rem;
-    margin-top: -1em;
-    width: 30%;
-    height: 120vh;
+    margin-top: -2em;
+    width: 28%;
+    height: 97vh;
     /* overflow: hidden; */
     transition: 0.3s;
+    
   
   }
   span{
     display: none;
   }
   .menu {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background: #18385C;
-    height: 100%;
-    z-index: 3333;
+    // display: flex;
+    // flex-direction: column;
+    // padding: 35px;
+    // background: #18385C;
+    // height: 100%;
+    // z-index: 3333;
+    // width: 4.5%;
+    // height: 96.5%;
+    // position: fixed;
+    // z-index: 1;
+    // top: 0;
+    // left: 0;
+    // right:1;
+    // background-color: #18385c;
+    // padding-top: 15px;
+        width: 3%;
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #18385c;
+          padding-top: 15px;
+        
   }
   
   .menu ul li {
@@ -89,7 +111,7 @@ body{
   .menu-trigger {
     position: absolute;
     top: 32px;
-    margin-left: 6px;
+    margin-left: 5px;
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -120,28 +142,27 @@ body{
     margin-left: 50%;
   }
   .container{
-    width:90%;
-    /* position: absolute; */
+    width:90;
+    //  position: absolute; 
+    height:80%;
   }
   input{
-  width:230px;
-      outline: 0;
-      border-width: 0 0 2px;
+     width:230px;
+     outline: 0;
+     border-width: 0 0 2px;
     }
   
   .headPart {
-  
-  margin-top: 0.5em;
-  margin-left: 17em;
-  
+  margin-top: 0.9em;
+  // margin-left: 15em;
   }
+
   .status {
-  
     border-radius: 4px;
     border: 1px solid #eee;
     background-color: #fafafa;
     height: 60px;
-    width: 90vw;
+    width: 125%;
      box-shadow: 0 4px 4px rgba(73, 73, 73, 0.35);
     margin-top: -1.5em;
     margin-left: -17.4em;
@@ -153,15 +174,15 @@ body{
     display: flex;
     position: absolute;
     top: 2%;
-    right: 5%;
+    right: 7%;
     cursor: pointer;
   }
   .leftPart{
     float: left;
-    margin-left: -15em;
-    margin-top: 0.3em;
-    width: 30%;
-    height: 90vh;
+    margin-left: -15.5em;
+    margin-top: 0.4em;
+    width: 28%;
+    height: 85.5vh;
       border-radius: 6px;
       border: 1px solid #eee;
       background-color: #fafafa;
@@ -177,9 +198,9 @@ body{
     margin-left: 3em;
   }
   .rigtPart {
-     height: 90vh;
-      margin-left: 32.5em;
-      margin-top: 0.2em;
+     height: 86vh;
+      margin-left: 30.4em;
+      margin-top: 0.5em;
      width: 74%;
      border-radius: 5px;
      border: 1px solid #eee;
@@ -216,7 +237,7 @@ body{
   }
   .profile{
     float: left;
-    height: 100vh;
+    height: 80vh;
   }
   .details{
     margin-top: 4em;
@@ -225,15 +246,15 @@ body{
   
   }
   .details input {
-    /* font-size: 18px; */
-    /* padding: 10px 5px 5px 5px; */
-    /*
-    width: 300px;
-    border: none;
-    border-bottom: 1px solid #fff; */
-    /*
-    margin-left: 4em;
-    margin-top: -4em; */
+    font-size: 15px; 
+    padding: 10px 5px 5px 5px; 
+    
+    // width: 300px;
+    // border: none;
+    // border-bottom: 1px solid #fff; 
+    
+    // margin-left: 4em;
+    // margin-top: -2em; 
   
      border-top: 1px solid #fff;
      border-left: 1px solid #fff;
@@ -248,10 +269,10 @@ body{
   .details input:focus {
     outline: none;
   }
-  .details{
-    /* list-style: none; */
+  // .details{
+  //   /* list-style: none; */
   
-  }
+  // }
   .details h1{
     color: #6E6C6C;
     font-size: 16px;
@@ -278,21 +299,22 @@ body{
   
   }
   button {
-    padding: 0.5em 1.5em;
-    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-    border: 1px solid;
+    padding: 0.5em 3.5em;
+    font-family:10px 'Roboto Condensed', 'Roboto', sans-serif;
+    border: 2px solid;
     border-radius: 0.5em;
     transition: background 0.2s, color 0.2s;
-    margin-top: -5em;
-    margin-left: 38em;
-    cursor: pointer;
-  
+    padding-right:35px;
+    margin-top: 1em;
+    margin-left: 60em;
+    cursor: pointer;  
+    font-style: 12px;
   }
   
-  
   button:hover {
-    background: rgb(31, 8, 8);
+    background:blue;
     color: rgb(242, 245, 239);
+
   }
   .active {
    display: inline;
@@ -300,6 +322,7 @@ body{
   }
   .details .info .active2{
   display: inline;
+  
   }
   .delete {
     position: relative;

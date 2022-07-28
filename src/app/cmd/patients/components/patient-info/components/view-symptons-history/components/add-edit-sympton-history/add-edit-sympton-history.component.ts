@@ -13,6 +13,7 @@ import { SymptomService } from 'src/app/cmd/patients/services/symptom.service';
 export class AddEditSymptonHistoryComponent implements OnInit {
 
   isAdd:boolean=this.symptomservice.isAdd;
+  router: any;
  
 
   constructor(private symptomservice:SymptomService,public dialog:MatDialog) { }
@@ -22,6 +23,12 @@ export class AddEditSymptonHistoryComponent implements OnInit {
     reading: new FormControl(),
     doctorname: new FormControl(),
   });
+  PatientInfo(id:number) {
+
+    //  this.router.navigate(['/CMD/appointment/ViewAppointmentDetails/'+id])
+     this.router.navigate(['/CMD/patient/PatientInfo/'+id])
+  
+    }''
 
   ngOnInit(): void {
     if(!this.isAdd){

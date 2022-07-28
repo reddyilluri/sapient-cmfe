@@ -4,7 +4,13 @@
   }
   .leftclass{
  // background-image: url(../../assets/images/loginpageback.jpg);
- background-image: url(/assets/images/loginpageback.jpg);
+ background-image: url(/assets/images/login.png) ;
+ 
+ 
+ background-size:     cover;                    
+ background-repeat:   no-repeat;
+ background-position: center center;  
+
   padding-top:200px;
   color: white;
   float:left;
@@ -20,9 +26,10 @@
   position: absolute;
   top: 20%;
   right: 0;
+  color:rgb(90, 90, 156);
   }
   .header{
-  background-color:#686868;
+  background-color: rgb(30, 30, 83);
   color: white;
   width:1300px;
   height:50px;
@@ -38,13 +45,13 @@
     border-color: black
   }
   button{
-  height:45px;
-  width:200px;
-  font-size:35px;
-  font-size:30px;
+  height:35px;
+  width: 125px;
+  font-size:20px;
   color: white;
-  background-color:#a0a0a0;
+  background-color:#b8b4b4;
   border-radius: 12px;
+  text-align: center;
   }
   input:focus::placeholder {
     color: transparent;
@@ -55,4 +62,15 @@
   h3{
   padding-top:8px;
   padding-left:1200px;
+  }
+  #username{
+    font-size: medium;
+    
+  }
+  #psw{
+    font-size: medium;
+  
+  }
+  ::placeholder{
+    color: #ebe5e5;
   }

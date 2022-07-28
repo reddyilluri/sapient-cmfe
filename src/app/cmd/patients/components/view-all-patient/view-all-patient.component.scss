@@ -1,38 +1,61 @@
 .patient-list-wrapper {
     height: 100%;
-    width: 100%;
+    width: 98%;
+    // float: left;
     margin-left: 40px;
+    // padding: 30px;
     .search-container {
         height: 50px;
         width: 100%;
+        float: left;
+        // padding-left: 20px;
         background-color: rgb(230, 227, 227);
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
+        
         .patient-title {
             font-size: 26px;
-            padding: 8px;
+            padding: 222px;
             font-weight: 500;
         }
+        // .topbar{
+        //     float: left;
+        // }
+        h3{
+            padding-left: 105px;
+        }
+     
         .search-sort {
            display: flex;
            align-items: center;
-           width: 75%;
+           width: 55%;
+        
            .search {
+            
                .search-icon {
-                color: #dee2e6;
+                color: #141d25;
                }
                
-               width: 150%;
+               width: 140%;
+               float: left;
            }
            .sort-label {
                margin-left: 20px;
-               width: 170px;
+               width: 102px;
+               font-weight: 600;
+               font-size: larger;
            }
         }
     }
+    select{
+        width: 50%;
+        height: 33px ;
+        border-radius: 10px;
+    }
     .patient-list-container {
         height: calc(100% - 50px);
+        // height: 580px;
         width: 100%;
         background-color: rgb(230, 227, 227);
         display: flex;
@@ -44,18 +67,22 @@
         overflow: auto;
     }
     .patient-card-wrapper {
-        width: 300px;
+        width: 250px;
         height: 120px;
         background-color: white;
         display: flex;
         flex-direction: column;
         color: gray;
         position: relative;
+        border-radius: 20px;
         cursor: pointer;
         .patient-details {
             display: flex;
             height: 250px;
+            // width: 50px;
             align-items: center;
+            
+            // border-radius: 9px;
             .patient-img {
                 height: 30px;
                 width: 30px;
@@ -80,6 +107,9 @@
                 padding-bottom: 8px;
             }
         }
+    //   #basic-addon1{
+    //     width: 30%;
+    //   }
         .patient-edit-icon {
             position: absolute;
             right: 20px;
@@ -89,8 +119,8 @@
         .patient-action-icons-wrapper {
             display: flex;
             justify-content: space-evenly;
-            //padding: 6px;
-            //padding-top: 10px;
+            padding: 6px;
+            padding-top: 10px;
             border-top: 1px solid rgb(238, 238, 238);
             .patient-action-icon {
                 font-size: 12px;

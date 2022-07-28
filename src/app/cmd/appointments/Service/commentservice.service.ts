@@ -15,7 +15,8 @@ export class CommentserviceService {
   getComment(id: number): Observable<object> {
     // return this._http.get<object>("assets/cmd.json");
     return this._http.get<object>(
-      'https://appointment.learn.skillassure.com/appointment/getcomment/' + id,
+      // 'https://appointment.learn.skillassure.com/appointment/getcomment/' + id,
+      'https://appointment.learn.skillassure.com/appointment/appointment/getcomment/'+ id,
       { headers: this.headers }
     );
   }
@@ -24,7 +25,8 @@ export class CommentserviceService {
     console.log(comment);
     this._http
       .put<object>(
-        'https://appointment.learn.skillassure.com/appointment/editcomment',
+        // 'https://appointment.learn.skillassure.com/appointment/editcomment',
+        'https://appointment.learn.skillassure.com/appointment/appointment/getcomment/1',
         comment,
         { headers: this.headers }
       )

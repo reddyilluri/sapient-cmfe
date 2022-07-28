@@ -17,7 +17,7 @@
                 </div>
 
 <div class="whole">
-    <div class="row" >
+    <div class="row" > <div class="buttons"><a href="patient"><span><i class="fa fa-arrow-left" aria-hidden="true"></i></span></a></div>
     <!-- *ngIf="patientInfo.patientid == patid.patientid"> -->
         <div class ="col-sm-4" >
             <img class="logo" src={{patientInfo.imageurl}}>
@@ -25,45 +25,46 @@
         <div class="col-sm-4">
 
             <p class="peter"><b>{{patientInfo.name}}</b></p>
-            <p class="tel">Tel:{{patientInfo.phone}}</p>
+            <h3 class="tel">Tel:{{patientInfo.phone}}</h3>
 
-            <span class="material-icons blue-color 1"> chat</span>
-            <span class="material-icons blue-color 1"> phone</span>
-            <span class="material-icons blue-color 3"> video_call</span>
-
+            <p class="material-icons blue-color 1"  > chat</p>
+          <p class="material-icons blue-color 1"> phone</p>
+            <p class="material-icons blue-color 3"   > video_call</p>
+      
 
         </div>
-        <!--<div class="col-sm-4">
+        <div class="col-sm-4 ">
             <div class="box">
-                <span class="material-icons blue-color 2"> alarm_add</span>
-                <p> Book New</p>
+                <span class="material-icons blue-color "> alarm_add</span>
+                <p>Book New</p>
             </div>
-        </div>-->
+        </div>
         <div class="row hea">
             <div class="col-sm-3">
                 <div class="line">
-                    <p class="heading">info </p>
-                    <p>{{patientInfo.DOB}}</p>
+                    <h4 class="heading"><b>Info</b>
+                       <br> 36  <i class="fa-solid fa-mars"></i> SEP12/1996</h4>
+                    <h3>{{patientInfo.DOB}}</h3>
                 </div>
-                <P> {{patientInfo.height}} <span class="material-icons red-color ">bloodtype </span>{{patientInfo.bloodgroup}}</P>
+                <h3> {{patientInfo.height}} cm<span class="material-icons red-color "> bloodtype </span>{{patientInfo.bloodgroup}}</h3>
 
 
             </div>
             <div class="col-sm-3">
                 <div class="line">
-                    <p class="heading">Allergies </p>
-                    <p>{{patientInfo.allergies}}</p>
+                    <h4 class="heading"><b> Allergies</b>  </h4>
+                    <h3>{{patientInfo.allergies}}</h3>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="line">
-                    <p class="heading">Active Issues </p>
-                    <p>{{patientInfo.activeissues}}</p>
+                    <h4 class="heading"><b>Active Issues</b> </h4>
+                    <h3>{{patientInfo.activeissues}}</h3>
                 </div>
             </div>
             <div class="col-sm-3">
-                <p class="heading">Medical Problems </p>
-                <p> {{patientInfo.medicalproblems}}</p>
+                <h4 class="heading"><b>Medical Problems</b> </h4>
+                <h3> {{patientInfo.medicalproblems}}</h3>
 
             </div>
         </div>
@@ -74,13 +75,13 @@
  <h1 class="demoText">Appointments/Consultation</h1>
  
  <div class="grid-container">
-    <div class="grid-item1">
+    <div class="col-md-4 col-sm-4 col-xs-4 ">
         <app-symptoms></app-symptoms>
     </div>
-    <div class="grid-item2">
+    <div class="overflow-auto">
         <app-appointment-history></app-appointment-history>
     </div>
-    <div class="grid-item3">
+    <div  class="overflow-hidden">
     <app-prescription-history></app-prescription-history>
 </div> 
 </div>
@@ -109,6 +110,7 @@
 
 
 <!-- <div class="sympt">
+    
     <app-symptoms></app-symptoms>
 </div>
 
@@ -118,4 +120,4 @@
 
 <div class="pres">
     <app-prescription-history></app-prescription-history>
-</div> -->
+</div>  -->

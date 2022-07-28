@@ -1,4 +1,4 @@
-.history {
+#history {
 
     border: 1px solid black;
     border-radius: 3px;
@@ -23,13 +23,13 @@
     size: 10px;
     text-align: center;
 
-    padding-left: 50px;
-
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid;
 
-    margin-left: 80px;
+    // margin-left: 80px;
 
-    margin-top: 1px;
+    // margin-top: 1px;
 
 }
 
@@ -73,9 +73,20 @@ hr {
     padding-left: 150px;
 }
 
-
+img{
+ width: 20px;
+ height: 20px;   
+}
 .header {
-    color: #1589FF;
+    // color: rgb(101, 204, 245);
+    // text-align: center;
+    color:rgb(101, 204, 245);
+          font-family: sans-serif;
+          font-size:20px;
+          margin-left: 50px;
+          font-weight: bold;
+          margin-top: 10px;
+        //   float: left;
 }
 
 .close:hover,
@@ -106,7 +117,7 @@ hr {
 
         .visit {
 
-            padding-left: 100px;
+            padding-left: 50px;
 
             display: flex;
 

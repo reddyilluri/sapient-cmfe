@@ -17,7 +17,7 @@ export class AddPrescriptionService {
   prescriptionDetails!: Prescriptions[];
   isAdd:boolean=false;
   editIndex:number=0;  
-  url:string='https://appointment.learn.skillassure.com/Prescriptions';
+  url:string='https://appointment.learn.skillassure.com/appointment/Prescriptions';
 
 
      getOneprescriptionDetails():Observable<any>{    

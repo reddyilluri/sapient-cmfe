@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../../auth.service';
 import { LoginService } from '../../Service/login.service';
 
 @Component({
@@ -18,53 +19,51 @@ export class LandingScreenComponent implements OnInit {
   isLoginFailed:boolean=false;
   errorMessage: any;
 
-  constructor(private fb: FormBuilder, private router: Router,private service:LoginService) {}
-  cmd: boolean = true;
-  // constructor(private router: Router) { }
-
+  constructor(private auth : AuthService , private fb: FormBuilder, private router: Router,private service:LoginService) {}
+  cmd:boolean;
+  cm:boolean;
   ngOnInit(): void {}
   display() {
-    this.cmd = !this.cmd;
+    this.cmd=true;
+    this.cm=false;
   }
+
+  display1() {
+    this.cm=true;
+    this.cmd=false;
+    
+ }
+
   form: any = {
-    username: null,
-    password: null
+    username: "",
+    password: ""
   };
 
-data:any=[];
-  onSubmit() {
-    console.warn(this.loginForm.value);
-   // alert('login Successful');
-   const { username, password } = this.form;
-    this.service.login(username,password)
-    .subscribe(response=>{
-      this.data=response;
-      console.log(this.data);
-      this.isLoginFailed = false;
-
-      localStorage.setItem('user',this.loginForm.value)
-      this.router.navigate(['/viewallappointments'])
-      //this.data.username
-      if(response!=null){
-        alert('login Successful');
-      }
-      },
-      err => {
-        this.errorMessage = err.error.message;
-        this.isLoginFailed = true;
-      }
-    );
-}
-
-  
-  nav() {
-    //this.router.navigateByUrl('/CMD/appointment/adda');
-    this.router.navigateByUrl('/CMD/appointment/viewallappointments');
+  set(username: string, password: string) {
+    this.form.username = username;
+    this.form.password = password;
   }
 
-  // getData(){
+data:any=[];
+onSubmit() {
+   const { username, password } = this.form;
+this.login();
+ 
 
-  // }
+}
+
+
+
+login() {
+
+this.auth.login(this.form.username,this.form.password);
+this.form.username = '';
+this.form.password = '';
+
+ }
+
+ 
+
 }
 
 

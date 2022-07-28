@@ -12,8 +12,8 @@ export class VitalsService {
   headers = new HttpHeaders()
     .set('Content-Type', 'application/json')
     .set('Access-Control-Allow-Origin', '*');
-  private url = 'https://appointment.learn.skillassure.com/';
-
+  //private url = 'https://appointment.learn.skillassure.com/';
+  private url =  'https://appointment.learn.skillassure.com/appointment/vitals/';
   constructor(private http: HttpClient) {}
 
   /*
@@ -25,17 +25,18 @@ export class VitalsService {
 */
   //get vitals by appointment id
   getvitalsbyAppointmentid(): Observable<any> {
-    // console.log("body"+this.appointid);
-    return this.http.get(this.url + 'appointment/get/' + this.appointid, {
+       //console.log("body"+this.appointid);
+    return this.http.get(this.url + 'http://cors-anywhere.herokuapp.com/https://appointment.learn.skillassure.com/appointment/vitals/getvitals/' + this.appointid, {
       headers: this.headers,
     });
+    
   }
 
   //edit vitals by appointment id
   editvitals(vital: Vitals): Observable<any> {
     // console.log("body"+this.appointid);
     return this.http.put(
-      this.url + 'appointment/savevital/' + this.appointid,
+      this.url + 'https://appointment.learn.skillassure.com/appointment/vitals/editvitals' + this.appointid,
       vital,
       { headers: this.headers }
     );

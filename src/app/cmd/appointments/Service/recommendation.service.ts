@@ -10,7 +10,8 @@ import {
   providedIn: 'root',
 })
 export class RecommendationService {
-  url = 'https://appointment.learn.skillassure.com/recommendation/rec';
+  url = 'https://appointment.learn.skillassure.com/appointment/recommendation/rec';
+  // url = 'http://localhost:3000/Appointment';
   header = new HttpHeaders()
     .set('Content-Type', 'application/json')
     .set('Access-Control-Allow-Origin', '*');
@@ -41,7 +42,7 @@ export class RecommendationService {
     appointmentList: drRecommendation[]
   ): Observable<drRecommendation[]> {
     return this._http.put<drRecommendation[]>(
-      'https://appointment.learn.skillassure.com/appointment/appoint/' + appId,
+      'https://appointment.learn.skillassure.com/appointment/recommendation/rec/' + appId,
       appointmentList,
       { headers: this.header }
     );
@@ -50,14 +51,13 @@ export class RecommendationService {
     appId: Number
   ): Observable<drRecommendation[]> {
     return this._http.get<drRecommendation[]>(
-      'https://appointment.learn.skillassure.com/appointment/appoint/' + appId,
+      'https://appointment.learn.skillassure.com/appointment/recommendation/rec/' + appId,
       { headers: this.header }
     );
   }
   deleteAppointment(id: Number, recId: Number): Observable<any> {
     return this._http.delete(
-      'https://appointment.learn.skillassure.com/appointment/appoint/' +
-        id +
+      'https://appointment.learn.skillassure.com/appointment/recommendation/rec/' + id +
         ',' +
         recId,
       { headers: this.header }

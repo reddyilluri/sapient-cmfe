@@ -11,7 +11,7 @@ export class TestServiceService {
     .set('Content-Type', 'application/json')
     .set('Access-Control-Allow-Origin', '*');
   constructor(private http: HttpClient) {}
-  private url = 'https://appointment.learn.skillassure.com/';
+  private url = 'https://appointment.learn.skillassure.com/appointment/test/edittests';
 
   getTests(): Observable<test[]> {
     // console.log(this.http.get<test[]>(this.url+"getalltests"));

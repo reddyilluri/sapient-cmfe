@@ -1,6 +1,6 @@
 export interface Vitals {
 
-    id: number ;
+    id: number;
     ecg:number;
     temperature:number;
      diabetes:number;

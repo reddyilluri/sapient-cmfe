@@ -16,13 +16,14 @@ export class ViewAllPatients {
 
   constructor(private http: HttpClient) {}
   index:number=0;
-  private url: string = 'https://patient.learn.skillassure.com/patient/viewallpatient/getpatients';
+  private url: string = 
+  'https://patient.learn.skillassure.com/patient/viewallpatient/getpatients';
 
   getviewallpatients(): Observable<object[]> {
     // console.log(this.http.get<number>(this.url+"getappointments"));
 
     return this.http.get<object[]>(
-      'https://patient.learn.skillassure.com/patient/viewallpatient/getpatients',
+    'https://patient.learn.skillassure.com/patient/viewallpatient/getpatients',
       { headers: this.headers }
     );
   }
@@ -30,7 +31,7 @@ export class ViewAllPatients {
     // console.log(this.http.get<number>(this.url+"getappointments"));
 
     return this.http.get<object[]>(
-      'https://patient.learn.skillassure.com/patient/viewallpatient/getviewallpatients/'+patientid,
+    'https://patient.learn.skillassure.com/patient/viewallpatient/getviewallpatients/'+patientid,
       { headers: this.headers }
     );
   }

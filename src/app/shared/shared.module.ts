@@ -13,7 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     TopHeaderComponent,
     SidebarComponent,
-    //LandingScreenComponent
+   // LandingScreenComponent
   ],
   imports: [
     CommonModule,

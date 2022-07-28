@@ -23,6 +23,12 @@ export class PatientInfoComponent implements OnInit {
     //this.patid=(window.localStorage.getItem('patientid'));
   }
 
+  // PatientInfo(id:number) {
+
+  //     //  this.router.navigate(['/CMD/appointment/ViewAppointmentDetails/'+id])
+  //      this.router.navigate(['/CMD/patient/PatientInfo/'+id])
+    
+  //     }
   // ViewAllPatient: Array<any> = [];
 
   ngOnInit(): void {

@@ -13,7 +13,9 @@ export class DoctordetailsService {
 
   getDoctorDetails(id: number): Observable<object> {
     return this._http.get<object>(
-      'https://appointment.learn.skillassure.com/appointment/getdoctor/' + id,
+      // 'https://appointment.learn.skillassure.com/appointment/getdoctor/' + id,
+      // 'http://localhost:3000/doctordetails' + id,
+      'https://appointment.learn.skillassure.com/appointment/appointment/getdoctor/' + id,
       { headers: this.headers }
     );
   }

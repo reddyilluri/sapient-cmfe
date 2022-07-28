@@ -177,70 +177,83 @@
 // }
 
 .container{
-    width:90%;
-    /* position: absolute; */
-  }
-  
-  .headPart {
-  
-  margin-top: 1em;
-  margin-left: 22em;
-  
-  }
-  .status {
+  width:90%;
+  /* position: absolute; */
+}
 
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 60px;
-    width: 90vw;
-     box-shadow: 0 4px 4px rgba(73, 73, 73, 0.35);
-    margin-top: -1.5em;
-    margin-left: -17.4em;
-  color: #ADADAD;
-  
-  
-  }
-  .statusDetails{
-    display: flex;
-    position: absolute;
-    top: 2%;
-    right: 4%;
-    cursor: pointer;
-  }
-  .statusDetails h4{
-    margin-top: 0.3em;
-  }
-  .statusDetails h4 .fa-1x{
-    margin: 0.7em;
-  }
-  #drop{
-    position:relative;
-    color: black;
-    width: 140px;
-    height: 21vh;
-     border-radius: 4px;
-     border: 1px solid #eee;
-     background-color: #fafafa;
-     box-shadow: 0 4px 4px rgba(73, 73, 73, 0.35);
-  margin-left: 90em;
-  margin-top: 3.8em;
-  }
-  #drop ul{
-    list-style: none;
-  text-align: center;
+.headPart {
+
+margin-top: 1em;
+margin-left: 22em;
+
+}
+.status {
+
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 60px;
+  width: 177%;
+  // width: 40000px;
+   box-shadow: 0 4px 4px rgba(73, 73, 73, 0.35);
+  margin-top: -1.5em;
+  margin-left: -57.4em;
+color: #ADADAD;
+
+
+}
+.statusDetails{
+  display: flex;
+  position: fixed;
+  top: 2%;
+  right: 4%;
+  cursor: pointer;
+  float: left;
+}
+.statusDetails h4{
+  margin-top: 0.3em;
+}
+.statusDetails h4 .fa-1x{
+  margin: 0.7em;
+}
+#drop{
+//   position:relative;
+//   color: black;
+//   width: 140px;
+//   height: 21vh;
+//    border-radius: 4px;
+//    border: 1px solid #eee;
+//    background-color: #fafafa;
+//    box-shadow: 0 4px 4px rgba(73, 73, 73, 0.35);
+// margin-left: 90em;
+// margin-top: 3.8em;
+    position: relative;
+      color: black;
+      width: 140px;
+      display:inline-flexbox;
+      height: 21vh;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      background-color: #fafafa;
+      box-shadow: 0 4px 4px rgb(73 73 73 / 35%);
+      margin-left: 86%;
+      margin-top: 5.4em;
+}
+#drop ul{
+  list-style: none;
+text-align: center;
 margin-left: -2em;
 }
-  #drop ul li{
-    margin: 0.5em;
-    cursor: pointer;
-  }
-  .dropdwon{
-     display: none;
-  }
-  .divd{
-    width: 110px;
-    height: 0.5px;
-    margin-left: -0.4em;
-    background-color: #18385C;
-  }
+#drop ul li{
+  margin: 0.5em;
+  cursor: pointer;
+}
+.dropdwon{
+   display: none;
+}
+.divd{
+  width: 110px;
+  height: 0.5px;
+  margin-left: -0.4em;
+  background-color: #18385C;
+}

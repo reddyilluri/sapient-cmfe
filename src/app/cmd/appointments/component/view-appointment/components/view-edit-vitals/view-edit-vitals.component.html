@@ -4,7 +4,7 @@
                   <div class="row">
                   <h2>Vitals &nbsp;&nbsp;
                    
-                   <button  *ngIf="!ReadMore" (click)="editclick()" >Edit</button>
+                   <button  *ngIf="!ReadMore" class="button" (click)="editclick()" >Edit</button>
                    <button  *ngIf="ReadMore" class="buttonclass"  (click)="saveclick()" >Save</button>
                    </h2>
                  
@@ -29,7 +29,8 @@
                               <span>Respiration</span>    
                             </div>
                         </div>
-
+                        <br>
+                        <br>
                         <div class="row">
                             <div class="col-lg-2">
                               <span class="text-centre" ><img [src]= ImgSrc1 class="imgsize"></span>
@@ -45,7 +46,7 @@
                                </div>
                 
                             <div class="col-lg-3 ">
-                                <span class="text-centre" ><img [src]=ImgSrc4 class="imgsize1"></span>  
+                                <span class="text-centre" ><img [src]=ImgSrc4 class="imgsize" style="width: 50px;height: 40px;"></span>  
                               </div>
                           </div>
 

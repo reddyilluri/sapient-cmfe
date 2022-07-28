@@ -26,6 +26,7 @@ export class ViewSymptonsHistoryComponent implements OnInit {
   ngOnInit(): void {
     this.symptomservice.getsymptomps()
     .subscribe(symptom=>this.symptoms=symptom)
+
   }
 
   addsymptom() {

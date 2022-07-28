@@ -7,7 +7,8 @@ import { ViewFeedback } from '../Model/ViewFeedback';
 })
 export class FeedbackService {
   appointmentId:number;
-  private url = 'https://appointment.learn.skillassure.com/feedback/get/';
+  // private url = 'https://appointment.learn.skillassure.com/feedback/get/';
+  private url = 'https://appointment.learn.skillassure.com/appointment/feedback/get/';
 
   constructor(private http: HttpClient) {}
 

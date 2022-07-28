@@ -23,9 +23,9 @@ export class ViewEditCommentsComponent implements OnInit {
       this.comment=comm;
   });
   }
-  //comment:String="patient has high cholestrol";
+  // comment:String="patient has high cholestrol";
 
-  //comment1:String="no comments";
+  // comment1:String="no comments";
   isReadonly:boolean=false;
   editable:boolean=false;
   editclick()

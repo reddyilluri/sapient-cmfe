@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
+// import { Config } from '@fortawesome/fontawesome-svg-core';
 
 
 @Injectable({
@@ -15,16 +16,17 @@ export class AppointmentHistoryService {
 
    constructor(private http:HttpClient) { }
 
-  private url:string='https://patient.learn.skillassure.com/patientviewallpatient/appointment/1';
 
+  private url:string='https://patient.learn.skillassure.com/patient/showappointmenthistory/AppointmentHistory';
+  
   getappointments():Observable<object[]>
+  {
+    console.log(this.http.get<number>(this.url+"getappointments"));
 
-    {
-        // console.log(this.http.get<number>(this.url+"getappointments"));
-
-        return this.http.get<object[]>('https://patient.learn.skillassure.com/patient/viewallpatient/appointment/'+1,{headers: this.headers});
-
-    }
-
+    return this.http.get<object[]>(
+      'https://patient.learn.skillassure.com/patient/showappointmenthistory/AppointmentHistory',{headers: this.headers});
 
 }
+
+}
+

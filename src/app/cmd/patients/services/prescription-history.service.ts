@@ -16,14 +16,16 @@ export class PrescriptionHistoryService {
 
    constructor(private http:HttpClient) { }
 
-  private url:string='https://patient.learn.skillassure.com/patient/PrescriptionHistory/Prescription';
+  private url:string=
+  'https://patient.learn.skillassure.com/patient/PrescriptionHistory/Prescription';
 
   getappointments():Observable<object[]>
 
     {
         // console.log(this.http.get<number>(this.url+"getappointments"));
 
-        return this.http.get<object[]>('https://patient.learn.skillassure.com/patient/PrescriptionHistory/Prescription',{headers: this.headers});
+        return this.http.get<object[]>(
+          'https://patient.learn.skillassure.com/patient/PrescriptionHistory/Prescription',{headers: this.headers});
 
     }
 

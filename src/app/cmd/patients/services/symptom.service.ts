@@ -16,6 +16,7 @@ export class SymptomService {
   editIndex:number=0;
 
   getsymptomps():Observable<any>{
+    // return this.http.get<any>('https://patient.learn.skillassure.com/patient/symptom/symptoms',{headers:this.headers});
     return this.http.get<any>('https://patient.learn.skillassure.com/patient/symptom/symptoms',{headers:this.headers});
   }
   addsymptomdata(symptom:any):Observable<any>{

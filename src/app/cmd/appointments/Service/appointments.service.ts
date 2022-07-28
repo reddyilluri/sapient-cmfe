@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -16,19 +17,19 @@ export class AppointmentsService {
   constructor(private http: HttpClient) {}
 
   private url: string =
-    'https://appointment.learn.skillassure.com/appointment/api/totalAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/totalAppointments';
   private url1: string =
-    'https://appointment.learn.skillassure.com/appointment/api/cancelledAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/cancelledAppointments';
   private url2: string =
-    'https://appointment.learn.skillassure.com/appointment/api/acceptedAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/acceptedAppointments';
   private url3: string =
-    'https://appointment.learn.skillassure.com/appointment/api/allAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/allAppointments';
   private url4: String =
-    'https://appointment.learn.skillassure.com/appointment/api/getfilterconfirmedAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/getfilterconfirmedAppointments';
   private url5: String =
-    'https://appointment.learn.skillassure.com/appointment/api/getfiltercancelledAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/getfiltercancelledAppointments';
   private url6: String =
-    'https://appointment.learn.skillassure.com/appointment/api/getfilterclosedAppointments';
+    'https://appointment.learn.skillassure.com/appointment/appointment/api/getfilterclosedAppointments';
   private url7: String =
     'https://appointment.learn.skillassure.com/appointment/updateappointment/';
 
@@ -36,41 +37,49 @@ export class AppointmentsService {
     // console.log(this.http.get<number>(this.url+"getappointments"));
 
     return this.http.get<number>(
-      'https://appointment.learn.skillassure.com/appointment/api/totalAppointments'
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/totalAppointments'
     );
   }
   getaccepted(): Observable<number> {
     // console.log(this.http.get<number>(this.url+"getappointments"));
 
     return this.http.get<number>(
-      'https://appointment.learn.skillassure.com/appointment/api/acceptedAppointments'
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/acceptedAppointments'
     );
   }
   getcancelled(): Observable<number> {
     // console.log(this.http.get<number>(this.url+"getappointments"));
 
     return this.http.get<number>(
-      'https://appointment.learn.skillassure.com/appointment/api/cancelledAppointments'
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/cancelledAppointments'
     );
   }
   getviewallappointments(): Observable<object> {
     return this.http.get<object[]>(
-      'https://appointment.learn.skillassure.com/appointment/api/allAppointments'
+     
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/allAppointments'
+     
     );
   }
+
+  //this below three lines was add by me........
+  // getviewallappointments(): Observable<object>{
+  //   return this.http.get<object>("asset/JSON DATA/view-all-appointments.json")
+  // }
+  
   getfilterconfirmedappointments(): Observable<object> {
     return this.http.get<object[]>(
-      'https://appointment.learn.skillassure.com/appointment/api/getfilterconfirmedAppointments'
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/getfilterconfirmedAppointments'
     );
   }
   getfiltercancelledappointments(): Observable<object> {
     return this.http.get<object[]>(
-      'https://appointment.learn.skillassure.com/appointment/api/getfiltercancelledAppointments'
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/getfiltercancelledAppointments'
     );
   }
   getfilterclosedappointments(): Observable<object> {
     return this.http.get<object[]>(
-      'https://appointment.learn.skillassure.com/appointment/api/getfilterclosedAppointments'
+      'https://appointment.learn.skillassure.com/appointment/appointment/api/getfilterclosedAppointments'
     );
   }
   canceloracceptappointment(id: any, status: any) {

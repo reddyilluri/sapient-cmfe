@@ -53,7 +53,15 @@ console.log(data));
     this.dialog.open(ViewFeedbackComponent, { disableClose: true });
   }
   viewDetails(id:number) {
+
+// patients most imp
+
+
    this.router.navigate(['/CMD/appointment/ViewAppointmentDetails/'+id])
+
+  // local Data
+  //  this.router.navigate([' http://localhost:3000/drDetails'+id])
+   // ...............
   }
   accepted: number = 0;
   total: Number = 0;
