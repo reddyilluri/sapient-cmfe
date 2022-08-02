@@ -14,7 +14,7 @@ COPY . /app/
 RUN npm cache clean --force
 
 RUN npm install
-RUN npm install -g firebase-tools
+RUN npm install @angular/fire
 # RUN npm install react-search-field --save
 RUN npm run build
 
